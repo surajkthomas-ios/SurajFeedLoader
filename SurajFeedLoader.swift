@@ -7,12 +7,14 @@
 
 import Foundation
 
-struct SurajFeedResult {
+enum SurajFeedResult {
     
-    case 
+    case  success([SurajFeedItem])
+    case error(Error)
 }
 
 Protocol SurajFeedLoader {
     
+    func loadFeed (completion : @escaaping(SurajFeedResult) -> Void)
     
 }
