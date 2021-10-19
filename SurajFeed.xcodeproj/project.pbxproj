@@ -7,25 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97220A9B271EA99C0091E8F7 /* SurajFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 97220A9A271EA99C0091E8F7 /* SurajFeed.docc */; };
-		97220A9C271EA99C0091E8F7 /* SurajFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 97220A99271EA99C0091E8F7 /* SurajFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97220AA3271EA9D40091E8F7 /* SurajFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97220AA2271EA9D40091E8F7 /* SurajFeedItem.swift */; };
-		97220AA5271EAB3D0091E8F7 /* SurajFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97220AA4271EAB3D0091E8F7 /* SurajFeedLoader.swift */; };
+		97D44C87271EE8A400F2D0AC /* FeedLoader.docc in Sources */ = {isa = PBXBuildFile; fileRef = 97D44C86271EE8A400F2D0AC /* FeedLoader.docc */; };
+		97D44C8D271EE8A400F2D0AC /* FeedLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D44C83271EE8A400F2D0AC /* FeedLoader.framework */; };
+		97D44C92271EE8A400F2D0AC /* FeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D44C91271EE8A400F2D0AC /* FeedLoaderTests.swift */; };
+		97D44C93271EE8A400F2D0AC /* FeedLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D44C85271EE8A400F2D0AC /* FeedLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		97D44C8E271EE8A400F2D0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97220A8D271EA99C0091E8F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97D44C82271EE8A400F2D0AC;
+			remoteInfo = FeedLoader;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		97220A96271EA99C0091E8F7 /* SurajFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SurajFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97220A99271EA99C0091E8F7 /* SurajFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SurajFeed.h; sourceTree = "<group>"; };
-		97220A9A271EA99C0091E8F7 /* SurajFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SurajFeed.docc; sourceTree = "<group>"; };
 		97220AA2271EA9D40091E8F7 /* SurajFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurajFeedItem.swift; sourceTree = "<group>"; };
 		97220AA4271EAB3D0091E8F7 /* SurajFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurajFeedLoader.swift; sourceTree = "<group>"; };
+		97D44C83271EE8A400F2D0AC /* FeedLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D44C85271EE8A400F2D0AC /* FeedLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedLoader.h; sourceTree = "<group>"; };
+		97D44C86271EE8A400F2D0AC /* FeedLoader.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FeedLoader.docc; sourceTree = "<group>"; };
+		97D44C8C271EE8A400F2D0AC /* FeedLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D44C91271EE8A400F2D0AC /* FeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		97220A93271EA99C0091E8F7 /* Frameworks */ = {
+		97D44C80271EE8A400F2D0AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97D44C89271EE8A400F2D0AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D44C8D271EE8A400F2D0AC /* FeedLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +57,8 @@
 			children = (
 				97220AA2271EA9D40091E8F7 /* SurajFeedItem.swift */,
 				97220AA4271EAB3D0091E8F7 /* SurajFeedLoader.swift */,
-				97220A98271EA99C0091E8F7 /* SurajFeed */,
+				97D44C84271EE8A400F2D0AC /* FeedLoader */,
+				97D44C90271EE8A400F2D0AC /* FeedLoaderTests */,
 				97220A97271EA99C0091E8F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,51 +66,78 @@
 		97220A97271EA99C0091E8F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97220A96271EA99C0091E8F7 /* SurajFeed.framework */,
+				97D44C83271EE8A400F2D0AC /* FeedLoader.framework */,
+				97D44C8C271EE8A400F2D0AC /* FeedLoaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97220A98271EA99C0091E8F7 /* SurajFeed */ = {
+		97D44C84271EE8A400F2D0AC /* FeedLoader */ = {
 			isa = PBXGroup;
 			children = (
-				97220A99271EA99C0091E8F7 /* SurajFeed.h */,
-				97220A9A271EA99C0091E8F7 /* SurajFeed.docc */,
+				97D44C85271EE8A400F2D0AC /* FeedLoader.h */,
+				97D44C86271EE8A400F2D0AC /* FeedLoader.docc */,
 			);
-			path = SurajFeed;
+			path = FeedLoader;
+			sourceTree = "<group>";
+		};
+		97D44C90271EE8A400F2D0AC /* FeedLoaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				97D44C91271EE8A400F2D0AC /* FeedLoaderTests.swift */,
+			);
+			path = FeedLoaderTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		97220A91271EA99C0091E8F7 /* Headers */ = {
+		97D44C7E271EE8A400F2D0AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97220A9C271EA99C0091E8F7 /* SurajFeed.h in Headers */,
+				97D44C93271EE8A400F2D0AC /* FeedLoader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		97220A95271EA99C0091E8F7 /* SurajFeed */ = {
+		97D44C82271EE8A400F2D0AC /* FeedLoader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97220A9F271EA99C0091E8F7 /* Build configuration list for PBXNativeTarget "SurajFeed" */;
+			buildConfigurationList = 97D44C98271EE8A400F2D0AC /* Build configuration list for PBXNativeTarget "FeedLoader" */;
 			buildPhases = (
-				97220A91271EA99C0091E8F7 /* Headers */,
-				97220A92271EA99C0091E8F7 /* Sources */,
-				97220A93271EA99C0091E8F7 /* Frameworks */,
-				97220A94271EA99C0091E8F7 /* Resources */,
+				97D44C7E271EE8A400F2D0AC /* Headers */,
+				97D44C7F271EE8A400F2D0AC /* Sources */,
+				97D44C80271EE8A400F2D0AC /* Frameworks */,
+				97D44C81271EE8A400F2D0AC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SurajFeed;
-			productName = SurajFeed;
-			productReference = 97220A96271EA99C0091E8F7 /* SurajFeed.framework */;
+			name = FeedLoader;
+			productName = FeedLoader;
+			productReference = 97D44C83271EE8A400F2D0AC /* FeedLoader.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		97D44C8B271EE8A400F2D0AC /* FeedLoaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97D44C99271EE8A400F2D0AC /* Build configuration list for PBXNativeTarget "FeedLoaderTests" */;
+			buildPhases = (
+				97D44C88271EE8A400F2D0AC /* Sources */,
+				97D44C89271EE8A400F2D0AC /* Frameworks */,
+				97D44C8A271EE8A400F2D0AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97D44C8F271EE8A400F2D0AC /* PBXTargetDependency */,
+			);
+			name = FeedLoaderTests;
+			productName = FeedLoaderTests;
+			productReference = 97D44C8C271EE8A400F2D0AC /* FeedLoaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,9 +146,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					97220A95271EA99C0091E8F7 = {
+					97D44C82271EE8A400F2D0AC = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					97D44C8B271EE8A400F2D0AC = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -118,13 +170,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97220A95271EA99C0091E8F7 /* SurajFeed */,
+				97D44C82271EE8A400F2D0AC /* FeedLoader */,
+				97D44C8B271EE8A400F2D0AC /* FeedLoaderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		97220A94271EA99C0091E8F7 /* Resources */ = {
+		97D44C81271EE8A400F2D0AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97D44C8A271EE8A400F2D0AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,17 +194,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		97220A92271EA99C0091E8F7 /* Sources */ = {
+		97D44C7F271EE8A400F2D0AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97220AA3271EA9D40091E8F7 /* SurajFeedItem.swift in Sources */,
-				97220AA5271EAB3D0091E8F7 /* SurajFeedLoader.swift in Sources */,
-				97220A9B271EA99C0091E8F7 /* SurajFeed.docc in Sources */,
+				97D44C87271EE8A400F2D0AC /* FeedLoader.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97D44C88271EE8A400F2D0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D44C92271EE8A400F2D0AC /* FeedLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97D44C8F271EE8A400F2D0AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97D44C82271EE8A400F2D0AC /* FeedLoader */;
+			targetProxy = 97D44C8E271EE8A400F2D0AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		97220A9D271EA99C0091E8F7 /* Debug */ = {
@@ -264,7 +338,7 @@
 			};
 			name = Release;
 		};
-		97220AA0271EA99C0091E8F7 /* Debug */ = {
+		97D44C94271EE8A400F2D0AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -283,17 +357,20 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.EDeveloperStudy.suraj.SurajFeed;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EDeveloperStudy.suraj.FeedLoader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		97220AA1271EA99C0091E8F7 /* Release */ = {
+		97D44C95271EE8A400F2D0AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -312,13 +389,66 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.EDeveloperStudy.suraj.SurajFeed;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EDeveloperStudy.suraj.FeedLoader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		97D44C96271EE8A400F2D0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TKYQ2QT92;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EDeveloperStudy.suraj.FeedLoaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		97D44C97271EE8A400F2D0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TKYQ2QT92;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EDeveloperStudy.suraj.FeedLoaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -334,11 +464,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97220A9F271EA99C0091E8F7 /* Build configuration list for PBXNativeTarget "SurajFeed" */ = {
+		97D44C98271EE8A400F2D0AC /* Build configuration list for PBXNativeTarget "FeedLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97220AA0271EA99C0091E8F7 /* Debug */,
-				97220AA1271EA99C0091E8F7 /* Release */,
+				97D44C94271EE8A400F2D0AC /* Debug */,
+				97D44C95271EE8A400F2D0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97D44C99271EE8A400F2D0AC /* Build configuration list for PBXNativeTarget "FeedLoaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97D44C96271EE8A400F2D0AC /* Debug */,
+				97D44C97271EE8A400F2D0AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
