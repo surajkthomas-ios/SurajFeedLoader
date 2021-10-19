@@ -12,13 +12,17 @@ import XCTest
 class RemoteTestFeeder{
     
     
-  func  loadtest (){}
+  func  loadtest (){
+      HTTPClient.shared.requestedURL = URL(string: "https://google.com")
+  }
 }
 
 
 class HTTPClient {
     
     var requestedURL : URL?
+    static let shared = HTTPClient ()
+    private init () {}
 }
 
 
@@ -27,11 +31,20 @@ class FeedLoaderTests: XCTestCase {
    
  func   test_init_DoesNotRequsetDataFromURL (){
         
-     let client = HTTPClient()
+     let client = HTTPClient.shared
         let sut = RemoteTestFeeder ()
         sut.loadtest()
      XCTAssertNil(client.requestedURL)
         
     }
 
+    func   test_init_RequsetDataFromURL (){
+           
+        let client = HTTPClient.shared
+           let sut = RemoteTestFeeder ()
+           sut.loadtest()
+        XCTAssertNotNil(client.requestedURL)
+           
+       }
+    
 }
