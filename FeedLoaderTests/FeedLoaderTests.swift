@@ -60,12 +60,27 @@ class FeedLoaderTests: XCTestCase {
     func   test_init_RequsetDataFromURL (){
         
             let url = URL(string: "https://google.com")
-            let client = HTTPClientSpy ()
-        let sut = RemoteTestFeeder (client: client , url : url!)
+        
+            let (sut, client) = makeSUT(url: url!)
+        
+        
+//        let sut = RemoteTestFeeder (client: client , url : url!)
             sut.loadtest(client: client)
         
         XCTAssertNotNil(client.requestedURL)
            
        }
+    
+    
+    // MARK :- Helpers
+     
+     private func makeSUT(url : URL) -> (sut : RemoteTestFeeder , client : HTTPClientSpy) {
+         
+         let client = HTTPClientSpy ()
+         let sut = RemoteTestFeeder (client: client, url: url)
+         return (sut , client)
+         
+     }
+    
     
 }
