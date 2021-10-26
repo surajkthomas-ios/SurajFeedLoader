@@ -11,6 +11,7 @@
 		97D44C8D271EE8A400F2D0AC /* FeedLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D44C83271EE8A400F2D0AC /* FeedLoader.framework */; };
 		97D44C92271EE8A400F2D0AC /* FeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D44C91271EE8A400F2D0AC /* FeedLoaderTests.swift */; };
 		97D44C93271EE8A400F2D0AC /* FeedLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D44C85271EE8A400F2D0AC /* FeedLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97E756922727C0B200F06D69 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E756912727C0B200F06D69 /* RemoteFeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		97D44C86271EE8A400F2D0AC /* FeedLoader.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FeedLoader.docc; sourceTree = "<group>"; };
 		97D44C8C271EE8A400F2D0AC /* FeedLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D44C91271EE8A400F2D0AC /* FeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderTests.swift; sourceTree = "<group>"; };
+		97E756912727C0B200F06D69 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				97220AA2271EA9D40091E8F7 /* SurajFeedItem.swift */,
 				97220AA4271EAB3D0091E8F7 /* SurajFeedLoader.swift */,
+				97E756902727C05800F06D69 /* Feed API */,
 				97D44C84271EE8A400F2D0AC /* FeedLoader */,
 				97D44C90271EE8A400F2D0AC /* FeedLoaderTests */,
 				97220A97271EA99C0091E8F7 /* Products */,
@@ -87,6 +90,14 @@
 				97D44C91271EE8A400F2D0AC /* FeedLoaderTests.swift */,
 			);
 			path = FeedLoaderTests;
+			sourceTree = "<group>";
+		};
+		97E756902727C05800F06D69 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				97E756912727C0B200F06D69 /* RemoteFeedLoader.swift */,
+			);
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E756922727C0B200F06D69 /* RemoteFeedLoader.swift in Sources */,
 				97D44C87271EE8A400F2D0AC /* FeedLoader.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +417,7 @@
 		97D44C96271EE8A400F2D0AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -430,6 +443,7 @@
 		97D44C97271EE8A400F2D0AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
