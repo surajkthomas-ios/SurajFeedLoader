@@ -13,8 +13,12 @@ import XCTest
 
 class HTTPClientSpy : HTTPClient {
     var requestedURL : URL?
+    var requestedURLS = [URL]()
+    var requestedURLCallCount = 0
     func get(from url : URL){
         self.requestedURL = url
+        self.requestedURLS.append(requestedURL!)
+        self.requestedURLCallCount += 1
     }
 }
 
@@ -43,6 +47,19 @@ class FeedLoaderTests: XCTestCase {
        }
     // MARK :- Helpers
      
+    func   test_loadTwice_requestDataFromUrlTwice (){
+        
+            let url = URL(string: "https://google.com")
+            let (sut, client) = makeSUT(url: url!)
+//        let sut = RemoteTestFeeder (client: client , url : url!)
+            sut.loadtest(client: client)
+        
+        XCTAssertEqual(client.requestedURLS, [url,url])
+        XCTAssertEqual(client.requestedURLCallCount, 2)
+           
+       }
+    
+    
      private func makeSUT(url : URL) -> (sut : RemoteTestFeeder , client : HTTPClientSpy) {
          
          let client = HTTPClientSpy ()
