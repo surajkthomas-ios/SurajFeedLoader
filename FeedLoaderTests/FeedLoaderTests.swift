@@ -31,7 +31,7 @@ class FeedLoaderTests: XCTestCase {
         
     }
 
-    func   test_init_RequsetDataFromURL (){
+    func   test_init_RequsetsDataFromURL (){
         
             let url = URL(string: "https://google.com")
             let (sut, client) = makeSUT(url: url!)
