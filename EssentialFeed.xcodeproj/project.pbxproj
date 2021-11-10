@@ -12,6 +12,7 @@
 		97A178CE273BB9FA0074B97E /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A178CD273BB9FA0074B97E /* EssentialFeedTests.swift */; };
 		97A178CF273BB9FA0074B97E /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A178C1273BB9FA0074B97E /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97A178D9273BBA310074B97E /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A178D8273BBA310074B97E /* FeedItem.swift */; };
+		97A178DD273BC8D80074B97E /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A178DC273BC8D80074B97E /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		97A178C8273BB9FA0074B97E /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A178CD273BB9FA0074B97E /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		97A178D8273BBA310074B97E /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		97A178DC273BC8D80074B97E /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				97A178D8273BBA310074B97E /* FeedItem.swift */,
+				97A178DC273BC8D80074B97E /* FeedLoader.swift */,
 				97A178C0273BB9FA0074B97E /* EssentialFeed */,
 				97A178CC273BB9FA0074B97E /* EssentialFeedTests */,
 				97A178BF273BB9FA0074B97E /* Products */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A178DD273BC8D80074B97E /* FeedLoader.swift in Sources */,
 				97A178D9273BBA310074B97E /* FeedItem.swift in Sources */,
 				97A178C3273BB9FA0074B97E /* EssentialFeed.docc in Sources */,
 			);
