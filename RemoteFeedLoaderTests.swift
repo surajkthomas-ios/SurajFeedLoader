@@ -7,18 +7,19 @@
 
 import XCTest
 
-class HTTPClient {
+protocol HTTPClient {
     
-    var requestedUrl : URL?
     
-    func GetfromUrl (url :URL) {}
+    func GetfromUrl (url :URL)
     
 }
 
 class HTTPClientSpy : HTTPClient {
+        
+    var requestedUrl : URL?
+
     
-    
- override   func GetfromUrl (url :URL){
+  func GetfromUrl (url :URL){
         
         requestedUrl = url
     }
@@ -48,7 +49,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     func test_init_RequestNoDataFromURL (){
         
         
-        let client = HTTPClient ()
+        let client = HTTPClientSpy ()
         _ = RemoteFeedLoader(Client: client)
         XCTAssertNil(client.requestedUrl)
         
