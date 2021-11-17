@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97075512273D08BD00F1140F /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97075511273D08BD00F1140F /* RemoteFeedLoaderTests.swift */; };
 		97A178C3273BB9FA0074B97E /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 97A178C2273BB9FA0074B97E /* EssentialFeed.docc */; };
 		97A178C9273BB9FA0074B97E /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A178BE273BB9FA0074B97E /* EssentialFeed.framework */; };
 		97A178CE273BB9FA0074B97E /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A178CD273BB9FA0074B97E /* EssentialFeedTests.swift */; };
 		97A178CF273BB9FA0074B97E /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A178C1273BB9FA0074B97E /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97A178D9273BBA310074B97E /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A178D8273BBA310074B97E /* FeedItem.swift */; };
 		97A178DD273BC8D80074B97E /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A178DC273BC8D80074B97E /* FeedLoader.swift */; };
+		97F1F562274544D2002640FD /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F561274544D2002640FD /* RemoteFeedLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		97075511273D08BD00F1140F /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		97A178BE273BB9FA0074B97E /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A178C1273BB9FA0074B97E /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		97A178C2273BB9FA0074B97E /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		97A178CD273BB9FA0074B97E /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		97A178D8273BBA310074B97E /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		97A178DC273BC8D80074B97E /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		97F1F561274544D2002640FD /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 		97A178B4273BB9FA0074B97E = {
 			isa = PBXGroup;
 			children = (
-				97075511273D08BD00F1140F /* RemoteFeedLoaderTests.swift */,
+				97F1F561274544D2002640FD /* RemoteFeedLoaderTests.swift */,
 				97A178D8273BBA310074B97E /* FeedItem.swift */,
 				97A178DC273BC8D80074B97E /* FeedLoader.swift */,
 				97A178C0273BB9FA0074B97E /* EssentialFeed */,
@@ -203,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97075512273D08BD00F1140F /* RemoteFeedLoaderTests.swift in Sources */,
 				97A178DD273BC8D80074B97E /* FeedLoader.swift in Sources */,
 				97A178D9273BBA310074B97E /* FeedItem.swift in Sources */,
 				97A178C3273BB9FA0074B97E /* EssentialFeed.docc in Sources */,
@@ -214,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F1F562274544D2002640FD /* RemoteFeedLoaderTests.swift in Sources */,
 				97A178CE273BB9FA0074B97E /* EssentialFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
