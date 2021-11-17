@@ -30,16 +30,20 @@ class HTTPClientSpy : HTTPClient {
 class RemoteFeedLoader {
     
     let client : HTTPClient?
+    let url : URL?
     
-    init(Client:HTTPClient) {
+    
+    init(Client:HTTPClient,url : URL) {
         
         self.client = Client
+        self.url = url
+        
     }
     
     
     func load () {
         
-        client?.GetfromUrl(url: URL(string: "http://somesting.com")!)
+        client?.GetfromUrl(url: self.url!)
 
     }
 }
@@ -48,9 +52,10 @@ class RemoteFeedLoaderTests: XCTestCase {
 
     func test_init_RequestNoDataFromURL (){
         
-        
+        let url = URL(string: "https://someurl.com")
+
         let client = HTTPClientSpy ()
-        _ = RemoteFeedLoader(Client: client)
+        _ = RemoteFeedLoader(Client: client, url: url!)
         XCTAssertNil(client.requestedUrl)
         
     }
@@ -58,14 +63,16 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     func test_Do_RequestNoDataFromURL (){
         
+        let url = URL(string: "https://someurl.com")
         
         let client = HTTPClientSpy ()
-        let sut = RemoteFeedLoader(Client: client)
+        let sut = RemoteFeedLoader(Client: client, url: url!)
         sut.load()
-        XCTAssertNotNil(client.requestedUrl)
-        
-        
+        XCTAssertEqual(client.requestedUrl, url!)
     }
+        
+      
+        
     
     
     
