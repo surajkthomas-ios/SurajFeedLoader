@@ -58,13 +58,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		973C726828A28F4F002A9E84 /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
+				97A178DC273BC8D80074B97E /* FeedLoader.swift */,
+				97A178D8273BBA310074B97E /* FeedItem.swift */,
+			);
+			path = "Feed Feature";
+			sourceTree = "<group>";
+		};
 		97A178B4273BB9FA0074B97E = {
 			isa = PBXGroup;
 			children = (
 				97DA5CD2274619C00066F2EA /* RemoteFeedLoader */,
 				97F1F561274544D2002640FD /* RemoteFeedLoaderTests.swift */,
-				97A178D8273BBA310074B97E /* FeedItem.swift */,
-				97A178DC273BC8D80074B97E /* FeedLoader.swift */,
+				973C726828A28F4F002A9E84 /* Feed Feature */,
 				97A178C0273BB9FA0074B97E /* EssentialFeed */,
 				97A178CC273BB9FA0074B97E /* EssentialFeedTests */,
 				97A178BF273BB9FA0074B97E /* Products */,
@@ -365,6 +373,7 @@
 		97A178D3273BB9FA0074B97E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

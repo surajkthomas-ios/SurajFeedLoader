@@ -8,6 +8,10 @@
 import Foundation
 
 public class RemoteFeedLoader {
+     
+    public enum Error:Swift.Error {
+        case connectivityError
+    }
     
     private   let client : HTTPClient?
     private    let url : URL?
@@ -17,7 +21,7 @@ public class RemoteFeedLoader {
         self.url = url
         
     }
-    public    func load () {
+    public    func load (completion:(Error) -> Void = { _ in }) {
         
         client?.GetfromUrl(url: self.url!)
         
